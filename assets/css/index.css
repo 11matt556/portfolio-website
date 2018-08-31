@@ -24,8 +24,19 @@ h2{
     color: #49525c;
 }
 
+.about-me > p{
+    font-family: 'Lato', sans-serif;
+}
+
 .jumbotron{
     border-radius: 0px;
+    background: #FAFAFA
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
 }
 
 .container {
