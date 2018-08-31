@@ -87,17 +87,22 @@ nav {
 
 /* The navigation menu links */
 nav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 8px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
     transition: 0.3s;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
 }
 
 /* When you mouse over the navigation links, change their color */
 nav a:hover {
     color: #000000;
+    text-decoration-line: none;
+    background: #5bc0de;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
