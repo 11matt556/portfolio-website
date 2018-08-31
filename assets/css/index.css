@@ -1,5 +1,27 @@
 body{
-    background-color: lightgrey
+    font-family: 'Lato', sans-serif;
+    color: #434343;
+    background: rgb(211, 220, 223);
+    font-size: 16px;
+}
+
+.tagline{
+    color: #778492;
+    font-family: "Lato", ans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: #49525c;
 }
 
 .jumbotron{
