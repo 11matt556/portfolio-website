@@ -58,13 +58,13 @@ h2{
 }
 
 #secondary-column{
-    padding-right: 0px;
+    padding-right: 15px;
 
 }
 
 /* Needed to keep container centered */
 .d-flex{
-    padding-right: 15px;
+    padding-right: 0px;
 
 }
 
