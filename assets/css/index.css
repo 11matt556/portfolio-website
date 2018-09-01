@@ -21,11 +21,7 @@ h2{
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
     font-size: 1.5em;
-    color: #49525c;
-}
-
-.about-me > p{
-    font-family: 'Lato', sans-serif;
+    color: #49515a;
 }
 
 .jumbotron{
@@ -81,26 +77,53 @@ h2{
     height: 50px;
 }
 
+.profile-img{
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+
+.fa-gitlab {
+    transform: translateY(-4%);
+    transform: translateX(-8%);
+}
+
+.fa-linkedin{
+    transform: translateY(0%);
+    transform: translateX(+4%);
+}
+.nav-social a{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    margin-left: 0px; 
+    margin-right: 0px; 
+    background: rgb(97, 97, 255);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    
+}
+
 /* The sidenav */
 nav > .header{
     text-align: center;
     margin-bottom: 50px;
-    margin-top: 50px; 
-    font-family: 'ostrich sans', sans-serif;
-    font-weight: 900;
-    font-size: 3em;
+    margin-top: 5px; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
     word-wrap: normal;
+    color: #49515a;
 }
 
 nav {
     min-height: 100%;
-    width: 300px;
+    min-width: 300px;
     position: relative;
     float: left;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #FAFAFA;
+    background-color: white;
     overflow-x: hidden;
     padding-top: 20px;
   }
@@ -109,12 +132,12 @@ nav {
 nav a {
     padding: 8px 8px 8px 8px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 24px;
+    color: #a0a0a0;
     display: block;
     text-align: center;
-    font-family: 'ostrich sans', sans-serif;
-    font-weight: light;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
 
 /* When you mouse over the navigation links, change their color */
