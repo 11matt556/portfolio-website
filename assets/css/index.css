@@ -19,6 +19,20 @@ h2{
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
     font-size: 1.5em;
+    color: #545e69;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    color: #49515a;
+}
+
+h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 1.2em;
     color: #49515a;
 }
 
@@ -71,26 +85,35 @@ h2{
     max-width: 150px;
     margin-bottom: 15px;
 }
-
+/*
 .fa-gitlab {
     transform: translateY(-4%);
     transform: translateX(-8%);
 }
-
+*/
 .fa-linkedin{
     transform: translateY(0%);
-    transform: translateX(+4%);
+    transform: translateX(+15%);
 }
 
 .social a{
     display: inline-block;
-    color: rgb(255, 255, 255);
-    margin-left: 0px; 
-    margin-right: 0px; 
-    background: rgb(97, 97, 255);
-    border-radius: 50%;
+    color: rgb(97, 97, 255);
+    margin-left: 5px; 
+    margin-right: 5px; 
+    /*background: rgb(97, 97, 255);*/
+    /*border-radius: 50%;*/
     width: 36px;
     height: 36px;
+}
+
+.social a:hover{
+    background-color: transparent;
+}
+
+.skills .progress{
+    margin-top: 15px;
+    height: 20px;;
 }
 
 /* The sidenav */
