@@ -63,10 +63,9 @@ h2{
 }
 
 /* Needed to keep container centered */
-.flex-container{
-    display: flex;
+.d-flex{
     padding-right: 15px;
-    flex-direction: row;
+
 }
 
 .container {
