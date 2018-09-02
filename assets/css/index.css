@@ -17,9 +17,9 @@ h1{
 
 h2{
     font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
+    font-weight: 700;
     font-size: 1.5em;
-    color: #545e69;
+    color: #49515a;
 }
 
 a:hover{
@@ -37,8 +37,45 @@ h4{
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     font-size: 1.2em;
-    color: #49515a;
+    color: rgb(67,67,67);
 }
+
+h3.subtitle{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(104, 104, 104);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+p.university{
+    font-size: 13px;
+    font-weight: 900;
+    color: rgb(153, 153, 153); /* Lighter subtext color */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 25px;
+}
+
+p.gpa{
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(153, 153, 153);
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-left: 25px;
+}
+
+i.year{
+    font-style: normal;
+    font-weight: normal;
+    color: #a0a0a0;
+
+}
+
+
+
 
 li > a{
     color: #49515a;
@@ -56,13 +93,13 @@ li > a{
     padding-left: 0px;
     padding-right: 0px;
     margin-bottom: 30px; 
-    border-radius: 0px;
+    border-radius: 10px;
     box-shadow: 5px 5px 5px #494949;
 
 }
 
 .section-inner{
-    padding: 35px;
+    padding: 30px;
 }
 
 .section-title{
@@ -70,7 +107,7 @@ li > a{
 }
 
 #secondary-column >  .section > .section-inner{
-    padding: 15px;
+    padding: 30px;
 }
 
 #secondary-column{
@@ -127,7 +164,7 @@ li > a{
     background-color: transparent;
 }
 
-.skills .progress{
+.progress{
     margin-top: 15px;
     height: 20px;;
 }
@@ -138,6 +175,7 @@ li > a{
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .project-img:hover{
@@ -145,12 +183,17 @@ li > a{
 }
 
 .item{
-    margin-bottom: 15px; 
+    font-family: 'Lato', sans-serif;
+}
+
+.item.project{
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 hr.divider{
-    margin-top: 60px;
-    margin-bottom: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 /* The sidenav */
