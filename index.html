@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Howell-info.us</title>
+    <section-title>Howell-info.us</section-title>
     <meta name="google-site-verification" content="dTXSb2bqbrONtrNJsUJhCRiWZZNwCGhaGtKI58MKJ1I" />
     <meta name="description" content="Welcome to my portfolio page">
     <meta name="author" content="Matthew Howell">
@@ -12,8 +12,9 @@
     <script src="assets/Plugins/jQuery/jquery-3.3.1.js"></script>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="assets/Plugins/bootstrap-4.1.3/css/bootstrap.css">
+   
     <script src="assets/Plugins/bootstrap-4.1.3/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/Plugins/bootstrap-4.1.3/css/bootstrap.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" type="text/css" href="assets/Plugins/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -54,7 +55,7 @@
 
         </nav>
 
-        <!--
+<!--
     <div class="jumbotron header">
         <h1> Matthew Howell </h1>
         <div class="tagline"> Computer Science Graduate </div>
@@ -67,13 +68,11 @@
                     <div class="section">
                         <a name="about"></a>
                         <div class="section-inner">
-                            <div class="about-me">
-                                <h2> About Me</h2>
-                                <p>I am a technology enthusiast with experience in the Information Technology field. I recently graduated from Clemson University with a Bachelors of Science in Computer Science. During my time at Clemson I worked in the College of Business as an IT Support Assistant. I currently maintain my own website running on Azure Web Apps and each is hosted in a separate on Azure Web App container. I also built and maintain my own personal home server. These experiences have given me experience in Linux Administration, web development, networking and cloud infrastructure.</p>
-
-                                <p>I was also part of a team who created a VR animation program in Unity3D.</p>
-
-                                <p>In my spare time I enjoy playing strategy games and improving my home network performance. I am also very frugal and have a side interest in economics. I am always looking for ways to reduce costs and invest in the future.</p>
+                                <h2 class="section-title"> About Me</h2>
+                                <div class="item">
+                                    <p>I am a technology enthusiast with experience in the Information Technology field. I recently graduated from Clemson University with a Bachelors of Science in Computer Science. During my time at Clemson I worked in the College of Business as an IT Support Assistant. I currently maintain my own website running on Azure Web Apps and each is hosted in a separate on Azure Web App container. I also built and maintain my own personal home server. These experiences have given me experience in Linux Administration, web development, networking and cloud infrastructure.</p>
+                                    <p>I was also part of a team who created a VR animation program in Unity3D.</p>
+                                    <p>In my spare time I enjoy playing strategy games and improving my home network performance. I am also very frugal and have a side interest in economics. I am always looking for ways to reduce costs and invest in the future.</p>
                             </div>
                         </div>
                     </div>
@@ -81,18 +80,58 @@
                     <div class="section">
                         <a name="latest"></a>
                         <div class="section-inner">
-                            <h2> Latest Updates </h2>
-                            <p> In a continued effort to reduce cost I have decided to shut down the AWS EC2 instance this website & projects were previously hosted on and migrated to Azure's Web Apps service. Each project runs in their own App container and the main sites static elements also have their own container. Some static projects which are completed and unlikely to changed often are actually still hosted on S3 though.
-                            </p>
 
-                            <p> I also took this migration process as an opportunity to set up some basic CI through Gitlab's CI tools, so no more manually pulling updates. Overall I'm pretty happy with my setup now, all for the low price of $0 per month (usually).</p>
+                                <h2 class="section-title"> Latest Updates </h2>
+
+                                <div class="item">
+                                    <p>In a continued effort to reduce cost I have decided to shut down the AWS EC2 instance this website & projects were previously hosted on and migrated to Azure's Web Apps service. Each project runs in their own App container and the main sites static elements also have their own container. Some static projects which are completed and unlikely to changed often are actually still hosted on S3 though.</p>
+                                    <p>I also took this migration process as an opportunity to set up some basic CI through Gitlab's CI tools, so no more manually pulling updates. Overall I'm pretty happy with my setup now, all for the low price of $0 per month (usually).</p>
+
+                                    (Maybe add gitlab updates here?)
+                                    TODO: make into bulletpoint list
+                            </div>
+
+                            <hr class="divider">
+
+                            <div class="item row">
+                                <a class="col-md-2 col-sm-2 col-xs-2" href="https://spotify-library2playlist.azurewebsites.net">
+                                        <img class="img-responsive project-img" src="assets/images/Spotify_Icon_RGB_Green.png">
+                                </a>
+                                <div class="col-md-10 col-sm-10 col-xs-12">
+                                        <a href="https://spotify-library2playlist.azurewebsites.net"><h3> Spotify-library2playlist</h3></a>
+                                        <p>Simple web application meant to make putting multiple songs from your Spotify library into a playlist easier. Currently not complete.</p>
+                                        <a class="btn btn-primary" href="https://spotify-library2playlist.azurewebsites.net" target="_blank"> Try it out</a>
+                                </div>
+                            </div>
+
+                            <hr class="divider">
+
+                            <div class="item row">
+                                    <a class="col-md-2 col-sm-2 col-xs-2" href="hhttps://numverify.azurewebsites.net">
+                                            <img class="img-responsive project-img" src="assets/images/phone.png">
+                                    </a>
+                                    <div class="col-md-10 col-sm-10 col-xs-12">
+                                            <a href="https://numverify.azurewebsites.net"><h3> Spotify-library2playlist</h3></a>
+                                            <p>Simple program designed to determine if the given number is valid. Pulls in available location information and displays location on Google Maps.</p>
+                                            <a class="btn btn-primary" href="https://numverify.azurewebsites.net" target="_blank"> Try it out</a>
+                                    </div>
+                                </div>
+
                         </div>
                     </div>
 
                     <div class="section">
                         <a name="projects"></a>
                         <div class="section-inner">
-                            <h2> Projects </h2>
+                            <h2 class="section-title">Other Projects</h2>
+
+                            <div class="item">
+                                <div>
+                                            <a href="#"><h3> 2D Game Engine - Pong</h3></a>
+                                            <p>Pong game written in C++ using SDL. Features parallax scrolling and configuration through XML.</p>
+                                            <a class="btn btn-primary" href="#" target="_blank"> Try it out</a>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -101,8 +140,11 @@
                     <div class="section">
                         <a name="info"></a>
                         <div class="section-inner">
-                            Easley, SC</br>
-                            email </br>
+                            <p>Easley, SC</p>
+                            <p>email</p>
+                            <p><a href="howell-info.us">howell-info.us</a></p>
+                            <p><a href="resume.pdf">Resume</a></p>
+
                         </div>
 
                     </div>
@@ -141,7 +183,11 @@
                     <div class="section">
                         <div class="section-inner">
                             <h2> Favorite Playlists </h2>
-                            Fourth Section, Secondary
+                            <ul class="list-unstyled">
+                                    <li><i class="fa fa-headphones"></i> <a href="https://open.spotify.com/user/phaskh/playlist/5jSM6lE56BKLKRiavRO4Aw">Rocket League</a></li>
+                                    <li><i class="fa fa-headphones"></i> <a href="https://open.spotify.com/user/11matt556/playlist/55s8AHVoKB5U9WQisUxpIQ">Gaming/Programming</a></li>
+                                    <li><i class="fa fa-headphones"></i> <a href="https://open.spotify.com/user/11matt556/playlist/7BsVLOWbYquSIor6eVlqHb">Electric Swing</a></li>
+                                </ul>
                         </div>
                     </div>
                     <div class="section">
@@ -163,5 +209,4 @@
         </div>
     </div>
 </body>
-
 </html>

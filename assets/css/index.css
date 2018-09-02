@@ -22,10 +22,14 @@ h2{
     color: #545e69;
 }
 
+a:hover{
+    text-decoration-color: #000000;
+}
+
 h3{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 18px;
     color: #49515a;
 }
 
@@ -33,6 +37,10 @@ h4{
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     font-size: 1.2em;
+    color: #49515a;
+}
+
+li > a{
     color: #49515a;
 }
 
@@ -45,7 +53,7 @@ h4{
 */
 .section{
     background-color: rgba(255, 255, 255, 1);
-    padding-left: 15px;
+    padding-left: 0px;
     padding-right: 0px;
     margin-bottom: 30px; 
     border-radius: 0px;
@@ -54,6 +62,14 @@ h4{
 }
 
 .section-inner{
+    padding: 35px;
+}
+
+.section-title{
+    margin-bottom: 25px;
+}
+
+#secondary-column >  .section > .section-inner{
     padding: 15px;
 }
 
@@ -114,6 +130,27 @@ h4{
 .skills .progress{
     margin-top: 15px;
     height: 20px;;
+}
+
+.project-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-img:hover{
+    opacity: 0.8;    
+}
+
+.item{
+    margin-bottom: 15px; 
+}
+
+hr.divider{
+    margin-top: 60px;
+    margin-bottom: 50px;
 }
 
 /* The sidenav */
