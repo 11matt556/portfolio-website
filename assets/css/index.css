@@ -74,9 +74,6 @@ i.year{
 
 }
 
-
-
-
 li > a{
     color: #49515a;
 }
@@ -93,7 +90,7 @@ li > a{
 }
 
 .info > ul > li > a{
-    
+    color: #28a745; /* Bootstrap Green */
 }
 
 .info > ul > li > .fa.fa-map-marker{
