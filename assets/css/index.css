@@ -295,6 +295,7 @@ nav a {
 .nav-sticky{
     position: sticky;
     top: 25px;
+    position: -webkit-sticky;
 }
 
 /* When you mouse over the navigation links, change their color */
