@@ -68,7 +68,9 @@
                     <div class="section">
                         <a name="about"></a>
                         <div class="section-inner">
+
                             <h2 class="section-title"> About Me</h2>
+
                             <div class="item">
                                 <p>I am a technology enthusiast with experience in the Information Technology field. I recently graduated from Clemson University with a Bachelors of Science in Computer Science. During my time at Clemson I worked in the College of Business as an IT Support Assistant. I currently maintain my own website running on Azure Web Apps and each is hosted in a separate on Azure Web App container. I also built and maintain my own personal home server. These experiences have given me experience in Linux Administration, web development, networking and cloud infrastructure.</p>
                                 <p>I was also part of a team who created a VR animation program in Unity3D.</p>
@@ -84,23 +86,43 @@
                             <h2 class="section-title"> Latest Updates </h2>
 
                             <div class="item">
-                                <p>In a continued effort to reduce cost I have decided to shut down the AWS EC2 instance this website & projects were previously hosted on and migrated to Azure's Web Apps service. Each project runs in their own App container and the main sites static elements also have their own container. Some static projects which are completed and unlikely to changed often are actually still hosted on S3 though.</p>
-                                <p>I also took this migration process as an opportunity to set up some basic CI through Gitlab's CI tools, so no more manually pulling updates. Overall I'm pretty happy with my setup now, all for the low price of $0 per month (usually).</p>
+                                <center><h3 class="subtitle">Website Redesign (9/4)</h3></center>
+                                <ul>
+                                    <li>Rebuilt from scratch, no template</li>
+                                    <li>Added side bar</li>
+                                    <li>New color scheme</li>
+                                </ul>
 
-                                (Maybe add gitlab updates here?) TODO: make into bulletpoint list
+                                Redesigned and rebuilt this website. Previously I was using a template but decided that as a developer it would be more appropriate for me to build my own website. 
+                                Major changes include a side bar and a pure CSS implementation of the skills section. The template relied on Javascript to animate the bars on page load.
+
+                            </div>
+                            
+                            <br>
+                            
+                            <div class="item">
+                                <center><h3 class="subtitle">Migrated to Azure (8/29)</h3></center>
+                                <ul>
+                                    <li>Shut down EC2</li>
+                                    <li>Migrated to Azure Web Apps</li>
+                                    <li>Implemented CI through Gitlab</li>
+                                </ul>
+
+                                Getting down and dirty with Apache and Ubuntu Server on AWS was fun, but I can't justify paying $3 a month for EC2. Initially I migrated to S3 but soon discovered that it was not
+                                appropriate for active projects due to high cost of writing to S3. Instead I have migrated almost everything to Azure Web App containers, which are available for the low price of 
+                                free, so long as I don't go over the quota.
+
+                                I also took this migration time to finally learn some of Gitlab's CI and set it up for auto deployment.
+
                             </div>
 
                             <hr class="divider">
 
                             <div class="item project row">
-                                <a class="col-md-2 col-sm-2 col-xs-2" href="https://spotify-library2playlist.azurewebsites.net">
-                                        <img class="img-responsive project-img" src="assets/images/Spotify_Icon_RGB_Green.png">
-                                </a>
+                                <a class="col-md-2 col-sm-2 col-xs-2" href="https://spotify-library2playlist.azurewebsites.net"><img class="img-responsive project-img" src="assets/images/Spotify_Icon_RGB_Green.png"></a>
                                 <div class="col-md-10 col-sm-10 col-xs-12">
-                                    <a href="https://spotify-library2playlist.azurewebsites.net">
-                                        <h3 class="subtitle"> Spotify-library2playlist</h3>
-                                    </a>
-                                    <p>Simple web application meant to make putting multiple songs from your Spotify library into a playlist easier. Currently not complete.</p>
+                                    <a href="https://spotify-library2playlist.azurewebsites.net"><h3 class="subtitle"> Spotify-library2playlist</h3></a>
+                                    <p>Web application meant to give the user additional options when viewing and creating playlists. Specifically, it will expose song and artist data available from the api but not normally visible to a user. Currently not complete.</p>
                                     <br>
                                     <a class="btn btn-primary btn-success" href="https://spotify-library2playlist.azurewebsites.net"> Try it out</a>
                                 </div>
@@ -116,7 +138,7 @@
                                     <a href="https://numverify.azurewebsites.net">
                                         <h3 class="subtitle"> Phone number verifier</h3>
                                     </a>
-                                    <p>Simple program designed to determine if the given number is valid. Pulls in available location information and displays location on Google Maps.</p>
+                                    <p>Web application that uses the numverify api to determine if the given number is valid. Pulls in available location information and displays location on Google Maps. Built with Javascript and PHP.</p>
                                     <br>
                                     <a class="btn btn-primary btn-success" href="https://numverify.azurewebsites.net">Try it out</a>
                                 </div>
